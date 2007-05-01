@@ -2,7 +2,7 @@
 
 Summary:	IO::Capture::Extended - Extend functionality of IO::Capture
 Name:		perl-%{real_name}
-Version:	0.09
+Version:	0.11
 Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
