@@ -11,6 +11,7 @@ Source0:	%{real_name}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:	perl-IO-Capture
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 IO::Capture::Extended is a distribution consisting of two
