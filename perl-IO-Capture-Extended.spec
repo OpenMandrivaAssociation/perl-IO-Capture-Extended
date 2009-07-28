@@ -1,17 +1,19 @@
-%define real_name IO-Capture-Extended
+%define upstream_name    IO-Capture-Extended
+%define upstream_version 0.11
+
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 
 Summary:	IO::Capture::Extended - Extend functionality of IO::Capture
-Name:		perl-%{real_name}
-Version:	0.11
-Release:	%mkrel 3
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	%{real_name}-%{version}.tar.bz2
-BuildRequires:	perl-devel
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-IO-Capture
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 IO::Capture::Extended is a distribution consisting of two
@@ -22,7 +24,7 @@ used in a testing context such as that provided by Test::Simple,
 Test::More or other modules built on Test::Builder.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -47,4 +49,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/IO/Capture/Extended/*pm
 %{perl_vendorlib}/IO/Capture/Stderr/*pm
 %{_mandir}/*/*
-
