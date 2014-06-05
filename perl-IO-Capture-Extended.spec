@@ -36,7 +36,7 @@ make test
 %makeinstall_std
 
 %files
-%doc Changes README
+%doc Changes 
 %dir %{perl_vendorlib}/IO/Capture/Stdout
 %dir %{perl_vendorlib}/IO/Capture/Extended
 %dir %{perl_vendorlib}/IO/Capture/Stderr
