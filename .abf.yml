@@ -1,2 +1,4 @@
+removed_sources:
+  IO-Capture-Extended-0.11.tar.bz2: 8c8058c8e499bf8de4f6d35d577f6c01f594cb21
 sources:
-  "IO-Capture-Extended-0.11.tar.bz2": 8c8058c8e499bf8de4f6d35d577f6c01f594cb21
+  IO-Capture-Extended-0.12.tar.gz: 2fd59d22039f95df4fd10b4518ac3e70c799baae
