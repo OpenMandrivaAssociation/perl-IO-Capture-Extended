@@ -7,6 +7,7 @@ Release:	1
 
 Summary:	IO::Capture::Extended - Extend functionality of IO::Capture
 
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
@@ -45,6 +46,7 @@ make test
 %{perl_vendorlib}/IO/Capture/Extended/*pm
 %{perl_vendorlib}/IO/Capture/Stderr/*pm
 %{_mandir}/*/*
+
 
 
 
